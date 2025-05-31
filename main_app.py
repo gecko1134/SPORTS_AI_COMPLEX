@@ -6,8 +6,8 @@ import sys
 BASE_DIR = os.path.dirname(__file__)
 if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
-
-from ai_modules.demand_forecasting import DemandForecaster
+    
+from modules.demand_forecasting import DemandForecaster
 from ai_modules.scheduling_optimizer import optimize_schedule
 from ai_modules.sponsorship_matcher import match_sponsors
 from ai_modules.dynamic_contract_generator import generate_contract
